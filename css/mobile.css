@@ -1,0 +1,109 @@
+
+/* REGRA PARA TELAS DE NO MÁXIMO 800px */
+
+@media only screen and (max-width: 800px){
+    #cabecalho .container{
+        display: block;
+        padding: 15px 0;
+        position: relative; /* aplicar no elemento pai */
+    }
+
+    #cabecalho #logo{
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    #cabecalho #but-menu{
+        display: block; /*n pra deixa visivel o icone*/
+        position: absolute; /* aplicar no elemento filho */
+        right: 15px;
+        top: 15px;
+
+    }
+
+    #cabecalho #menu{
+        display: none;
+        margin-top: 15px;
+    }
+    #cabecalho #menu ul li{
+        display: block;
+    }
+    #cabecalho #menu ul li a{
+        text-align: center;
+        border-bottom: 1px solid #666;
+    }
+
+    #cabecalho #menu ul li:first-child a{
+        border-top: 1px solid #666;
+    }
+    #modelos .container{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    /* PRODUTOS*/
+
+    #produtos .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #produtos .container img{
+        width: 150px;
+    }
+
+    /* QUEM SOMOS */
+    #quem-somos .container img{
+        width: 300px;
+    }
+    /* VIDEOS */
+
+    #videos .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+
+     /* QUEM SOMOS */
+    #quem-somos .container img{
+        width: 200px;
+    }
+}
+
+/* REGRA PARA TELAS DE NO MÁXIMO 360px */
+
+
+@media only screen and (max-width: 360px){
+    #modelos .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .titulo-secao{
+        font-size: 200%;
+    }
+
+    #modelos img{
+        margin: 0 auto;
+        display: block;
+    }
+
+    #modelos h3{
+        text-align: center;
+    }
+
+    #modelos .but-comprar{
+        margin: 0 auto;
+    }
+
+     /* PRODUTOS*/
+
+     #produtos .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+     /* QUEM SOMOS */
+     #quem-somos .container img{
+        width: 150px;
+    }
+}
